@@ -9,12 +9,15 @@ export const Navbar = () => {
         
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-4 blockquote">
             
-            <Link 
-                className="navbar-brand" 
-                to="/FrontPage"
-            >
-                HEROES APP
-            </Link>
+            <div className='tituloNav'>
+                <img src="..\public\Hero.svg" alt="" className='imagenTitulo'/>
+                <Link 
+                    className="navbar-brand" 
+                    to="/FrontPage"
+                >
+                    HEROES APP
+                </Link>
+            </div>
 
             <div className="navbar-collapse">
                 <div className="navbar-nav">

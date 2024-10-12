@@ -10,6 +10,12 @@
     padding: 10px 15px;
     width: 100%;
   }
+
+  .imagenTitulo{
+    width: 40px;
+    padding-right: 10px;
+  }
+
   
   h2 {
     font-size: 1.5rem;
