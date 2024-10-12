@@ -1,11 +1,11 @@
 
 export const getGifs = async (category) => {
   try {
-      const url = `https://api.giphy.com/v1/gifs/search?api_key=5oGFpTQ5cyocJOkBbPf9H9sKBdLDeeJr&q=${encodeURIComponent(category)}&limit=6`;
+      const url = `https://api.giphy.com/v1/gifs/search?api_key=5oGFpTQ5cyocJOkBbPf9H9sKBdLDeeJr&q=${category}&limit=6`;
       const resp = await fetch(url);
 
       if (!resp.ok) {
-          throw new Error('Error en la petición a la API.');
+          console.log('Error en la petición a la API.');
       }
 
       const { data } = await resp.json();
